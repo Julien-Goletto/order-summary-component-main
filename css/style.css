@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(225, 100%, 94%);
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 16px;
+	font-weight : 500;
+	color : hsl(224, 23%, 55%);
+	line-height : 1.4;
+}
+
+/*Mise en forme générique des boutons*/
+button {
+	background:none;
+	border : none;
+	font-family: inherit;
+	font-weight : 900;
+}
+
+.summary{
+	background-color : white;
+	border-radius : 20px;
+	width : 450px;
+}
+
+.summary__img{
+	display : block;
+	margin : auto;
+	max-width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+
+.summary__main{
+	padding : 40px;
+}
+
+.summary__title{
+	font-size : 1.8em;
+	font-weight : 700;
+	color : hsl(223, 47%, 23%);
+	text-align: center;
+	margin-bottom : 20px;
+}
+
+.summary__description{
+	text-align: center;
+	padding : 0 20px;
+}
+
+.summary__detail{
+	margin : 20px 0;
+	display : flex;
+	position : relative;
+	justify-content: space-between;
+	background-color: hsl(225, 100%, 98%);
+	padding : 25px;
+	border-radius : 10px;
+}
+
+.summary__plan{
+	padding-left : 60px;
+}
+
+.summary__plan::before{
+	content : "";
+    display : inline-block;
+	position : absolute;
+	left : 20px;
+    height : 50px;
+    width : 50px;
+    background-image: url("../images/icon-music.svg");
+	vertical-align : middle;
+    background-size : 100%;
+}
+
+.plan__selected{
+	font-weight: 700;
+	color : hsl(223, 47%, 23%);
+	font-size : 1.1em;
+}
+
+.detail__change{
+	text-decoration: underline;
+	color : hsl(245, 75%, 52%);
+}
+
+.summary__payment{
+	background-color : hsl(245, 75%, 52%);
+	width : 100%;
+	padding : 15px 0;
+	border-radius : 10px;
+	color : white;
+	font-size: 1.1em;
+}
+
+.summary__cancel{
+	color :hsl(224, 23%, 55%);
+	width : 100%;
+	padding-top : 25px;
+	padding-bottom : 5px;
+}
